@@ -22,3 +22,10 @@ def cnpj_is_valid(cnpj: str):
     if not padrao_cnpj.match(cnpj):
         return False
     return True
+
+
+def cpf_is_valid(cpf: str) -> bool:
+    padrao_cpf = re.compile('^\d{3}[\.]?\d{3}[\.]?\d{3}[-]?\d{2}$')
+    if not padrao_cpf.match(cpf):
+        return False
+    return True

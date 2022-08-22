@@ -13,7 +13,7 @@ class Usuario(ABC):
         self.__email = None
         self._matricula = None
         self.__data_cadastro = datetime.now()
-        self.__documento = None
+        self._documento = None
 
     @property
     def id(self) -> uuid.UUID:
@@ -55,7 +55,7 @@ class Usuario(ABC):
 
     @property
     def documento(self) -> str:
-        return self.documento
+        return self._documento
 
     @abstractmethod
     def cadastrar_documento(self, documento: str) -> None:
