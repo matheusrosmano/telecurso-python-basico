@@ -39,3 +39,6 @@ class Escola:
     def __str__(self):
         texto = f"<< CNPJ: {self.cnpj} | Nome: {self.nome} >>"
         return texto
+
+    def __eq__(self, other):
+        return self.cnpj == other.cnpj
