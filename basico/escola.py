@@ -35,3 +35,7 @@ class Escola:
         if not cnpj_is_valid(cnpj):
             raise ValueError("Cnpj isn't valid")
         self.__cnpj = cnpj
+
+    def __str__(self):
+        texto = f"<< CNPJ: {self.cnpj} | Nome: {self.nome} >>"
+        return texto
