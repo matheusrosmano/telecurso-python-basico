@@ -1,4 +1,8 @@
 # Telecurso python básico
 
-O intuito deste projeto é mostrar um pouco sobre python, descrever classes
-metodos, funções, variaveis, entre outras funcionalidades
+O intuito deste repo é para armazenar pequenos projetos que serão apresentados
+no telecurso
+
+## Projetos
+
+* [Básico](basico/README.md)

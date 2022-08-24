@@ -1,4 +1,4 @@
-from validators import cnpj_is_valid
+from basico.validators import cnpj_is_valid
 
 
 class Escola:
